@@ -2,6 +2,12 @@ const express = require('express');
 const app = express();
 app.use(express.static('public'));
 
+let port = 3030 || process.env.PORT; 
+
+app.listen(port, ()=>{
+    console.log("Servidor Funcionando en puerto " + port);
+})
+
 app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/views/home.html');
 });
@@ -12,8 +18,4 @@ app.get('/login', (req,res)=>{
 
 app.get('/register', (req,res)=>{
     res.sendFile(__dirname + '/views/register.html');
-});
-
-app.listen(5000, ()=>{
-    console.log('Server ready');
 });
