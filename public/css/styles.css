@@ -1,5 +1,9 @@
-/* //HEADER  */
-
+                HEADER_HEADER
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
@@ -29,9 +33,9 @@ text-align: center;
 
 .header_navbar {
     background-color: #EAC926;
-}
+} 
 
-/* .list-header_one {
+.list-header_one {
     font-family: roboto;
     font-size: 12px;
     color: black;
@@ -46,7 +50,8 @@ text-align: center;
     list-style-type: none;
     margin: 0%;
     padding: 0%;
-} */
+} 
+
 .burger_menu {
     text-align: center;
     font-size: 24px;
@@ -56,26 +61,29 @@ text-align: center;
     background-color: blue;
     width: 40px;
     margin: auto;
-   /* box-sizing: border-box; */
+   box-sizing: border-box;
 }
+
 div.ultima_visita
 div.ofertas {
     display: flex;
     flex-wrap: wrap;
 }
 
-.banner {
+.banner_img {
     width: 100%;
+    margin: 0 auto;
 }
 
-/* //MAIN */
+                    MAIN_MAIN
+
 *{
     margin: 0px;
     padding: 0px;    
     box-sizing: border-box;
 }
 
-main {
+.main {
     width: 90%;
     margin: 0 auto;
 }
@@ -90,31 +98,20 @@ height: 30px;
 border: 1px solid #39b54a;
 background-color: #FFF;
 border-radius: 50%;
-position: absolute;
 right: 20px;
 top: -15px;
    
     
 }
 article div.infor_articulos_main {
-   font-family: roboto;
-   font-size: 18px;
-   /* text-align: center;   */
-   /* width: 100%; */
    display: flex;
    flex-direction: column;
+   flex-wrap: wrap;
    align-items:baseline;
    position: relative;
    padding: 15px;
+   margin-bottom: 10px;
    
-}
-/* .monto 
-.promo{
-    display: flex;
-  justify-content: right;
-} */
-.promo {
-    color: #39b54a;
 }
 .img_main_productos {
     display: flex;
@@ -128,7 +125,21 @@ article div.infor_articulos_main {
     width: 250px;
     height: 300px;
     box-sizing: border-box;
+    box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
 }
+.productos {
+    border-top: 1px solid #ebebeb;
+  padding: 15px;
+}
+.monto 
+.promo{
+    display: flex;
+  justify-content: right;
+}
+.promo {
+    color: #39b54a;
+}
+
 
 .precio {
     font-size: 18px;
@@ -143,29 +154,22 @@ article div.infor_articulos_main {
 }
 
 
-
-
-/* main section .info {
-    display: block;
-} */
-/* main section div.infor-articulos-main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-} */
-
-
-
-FOTER 
+                    FOOTER_FOOTER
 
 .footer {
-    font-family: roboto;
-    font-size: 12px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+footer section article h3, h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 footer section article i {
+
     color:blue;
     font-size: x-large;
 }
@@ -182,3 +186,22 @@ CSS LOGIN
  background-color: #EAC926;
  color:#EAC926 
 }
+
+@media (max-width: 768px) {
+    .header_navbar {
+      display: none;
+    }
+ 
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .header_navbar {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .header_navbar {
+      display: block;
+    }
+  }
