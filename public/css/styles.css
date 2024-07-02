@@ -176,16 +176,103 @@ footer section article i {
 
 CSS REGISTER
 
-.registro_ml {
-    font-size: medium;
-}
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .registro_ml {
+    width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+   
+  }
+  
+  .registro_ml h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .registro_ml input[type="text"],
+  .registro_ml input[type="email"],
+  .registro_ml input[type="date"],
+  .registro_ml input[type="file"],
+  .registro_ml input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  
+  .intereses div {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+
+  .intereses label {
+    cursor: pointer;
+  }
+  
+  .registro_ml input[type="submit"],
+  .registro_ml input[type="reset"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
 CSS LOGIN
 
-.login_ml {
- background-color: #EAC926;
- color:#EAC926 
-}
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #f5f5f5; 
+  }
+  
+  .login_ml {
+    width: 350px; 
+    margin: 50px auto; 
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login_ml h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login_ml input[type="text"],
+  .login_ml input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  
+  .login_ml input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
 
 @media (max-width: 768px) {
     .header_navbar {
