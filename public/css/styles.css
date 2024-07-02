@@ -23,6 +23,9 @@ h3{
 }
 .search_bar {
 background-color: #EAC926;
+display: flex;
+    flex-wrap: wrap;		
+    padding: 5%;
 }
 
 p {
@@ -53,12 +56,13 @@ text-align: center;
 } 
 
 .burger_menu {
+    background-color: #0044AA;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
+    height: 40px;
     color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 5px;
-    background-color: blue;
     width: 40px;
     margin: auto;
    box-sizing: border-box;
@@ -77,12 +81,6 @@ div.ofertas {
 
                     MAIN_MAIN
 
-*{
-    margin: 0px;
-    padding: 0px;    
-    box-sizing: border-box;
-}
-
 .main {
     width: 90%;
     margin: 0 auto;
@@ -98,12 +96,14 @@ height: 30px;
 border: 1px solid #39b54a;
 background-color: #FFF;
 border-radius: 50%;
+position: absolute;
 right: 20px;
 top: -15px;
    
     
 }
 article div.infor_articulos_main {
+    width: 100%;
    display: flex;
    flex-direction: column;
    flex-wrap: wrap;
@@ -125,7 +125,7 @@ article div.infor_articulos_main {
     width: 250px;
     height: 300px;
     box-sizing: border-box;
-    box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+   
 }
 .productos {
     border-top: 1px solid #ebebeb;
@@ -205,3 +205,36 @@ CSS LOGIN
       display: block;
     }
   }
+
+  @media (min-width: 361px){
+    main section article .infor_articulos_main{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;				
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.productos article{
+        width: 45%;
+    }
+
+    .monto,
+    .promo{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px){
+    main section div.productos article{
+        width: 22%;
+    }
+}
